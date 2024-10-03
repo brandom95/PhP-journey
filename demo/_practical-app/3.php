@@ -12,7 +12,45 @@
 
 <article class="main-content col-xs-8">
 
-<?php  
+<?php 
+/* if statement */ 
+$x= 5;
+if($x === 4){
+	echo"cat stole the code";
+}elseif($x != 4){
+	echo"i love PHP<br>" ;
+};
+
+/* for loop */
+
+for($x=0; $x <= 10; $x++){
+	echo "{$x} <br>";
+}
+
+/* switch */
+
+switch ($x) {
+	case 5:
+		echo"this cat is hungry";
+		break;
+	case 1:
+		echo"this cat is handsome";
+		break;
+	case 2:
+		echo"this cat is grumpy";
+		break;
+	case 11:
+		echo"this cat is long";
+		break;
+	case 4:
+		echo"this cat is short";
+		break;
+		
+	
+	default:
+	echo"where is the cat?";
+		break;
+}
 
 /*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 

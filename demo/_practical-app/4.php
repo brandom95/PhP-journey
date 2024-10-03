@@ -15,6 +15,12 @@
 
 	
 	<?php  
+function calculation($num1, $num2){
+	$finalCalc = $num1 + $num2;
+	return $finalCalc;
+}
+
+echo calculation(10,2);
 
 /*  Step1: Define a function and make it return a calculation of 2 numbers
 
@@ -23,7 +29,6 @@
 
  */
 
-	
 ?>
 
 

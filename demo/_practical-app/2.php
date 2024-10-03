@@ -15,7 +15,14 @@
 		
 
 <?php
+$number1= 10;
+$number2= 20;
+$numberSum = $number1 + $number2;
 
+echo "{$number1} + {$number2}= {$numberSum} and this is the array"; 
+
+$numArray= array("number1" => 20,
+10);
 
 
 		/* Step 1: Make 2 variables called number1 and number2 and set 1 to value 10 and the other 20:

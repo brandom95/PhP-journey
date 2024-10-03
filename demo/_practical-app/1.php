@@ -13,24 +13,18 @@
 
 <article class="main-content col-xs-8">
 		
-
-
+<h1>
 		<?php  
-
 
 		/* 
 		   Step 1:  Use the Echo Function to say hello with html h1                  tags embedded inside php.
-
-
-		   Step 2: Write a comment above the echo function and explain
+		    Step 2: Write a comment above the echo function and explain
 		   what that function is doing.
-
-
 		   */
 
+ echo "Hello World!";
 		?>
-
-	
+</h1>	
 
 		</article><!--MAIN CONTENT-->
 

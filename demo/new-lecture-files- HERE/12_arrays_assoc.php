@@ -8,6 +8,17 @@
 
 <?php 
 
+$products= [
+    ["side" => "pizza","quantity" => 20,"slices" => true],
+    ["side" => "wings","quantity" => 10,"coke" => false],
+    ["side" => "vegetables","quantity" => 5,"slices" => false]
+];
+
+
+
+foreach($products as $product){
+    echo $product["side"]."have ".$product['quantity'];
+};
 $number = array('juanita', 'maria', 'jose');
 
 //print_r($number);

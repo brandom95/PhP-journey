@@ -13,8 +13,19 @@
 
 <article class="main-content col-xs-8">
  
+<form>
+	<input name="text" type="text" placeholder="write something here">
+	<input type="submit" >
+</form>
 
 	<?php  
+
+	$textSend = $textErr = "";
+
+	if(empty($_POST)){
+		
+	}
+
 
 /*  Step1: Make a form that submits one value to POST super global
 

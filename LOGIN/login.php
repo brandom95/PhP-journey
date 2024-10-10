@@ -1,3 +1,36 @@
+
+
+<?php
+
+session_start();
+
+$message = "";
+
+if($_SERVER['REQUEST_METHOD']=='POST'){ 
+    //set sessions
+    $username = 'bran';
+    $password= 'secret';
+
+
+    //getting input from the user - post super variable
+    $input_username = $_POST['username'];
+    $input_password = $_POST['password'];
+
+    if($input_username === $username && $input_password === $password){
+        $_SESSION['logged_in'] = true;
+        $_SESSION['username'] = $input_username;
+
+        header("Location: admin.php");
+        exit;
+    }else{
+        $message = "Invalid username or password";
+    }
+
+
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +40,19 @@
 </head>
 <body>
     <h2>Login Page </h2>
+  
+    <?php if($message):?>
+    <p style="color: red;"><?php echo $message ?></p>
+
+    <?php endif; ?>
+
     <form method="POST">
     <label for="username" >Username</label>
     <input id="username" type="text" name="username"><br><br>
     <label for="password" >password</label>
-    <input id="password" type="text" name="password"><br><br>
-
+    <input id="password" type="password" name="password"><br><br>
     <input type="submit" value="Login">
     
     </form>
 </body>
 </html>
-
-<?php
-
-if($_SERVER['REQUEST_METHOD']=='POST'){
-
-}
-
-?>
